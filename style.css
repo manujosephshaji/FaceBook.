@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    background-color: #F5F6F7;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo img {
+    width: 20rem;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.logo h2 {
+    width: 35rem;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 29px;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 365px;
+}
+
+.conform-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 365px;
+    padding: 14px 0px 27px 0px;
+    border-radius: 6px;
+}
+
+.email-section input {
+    display: flex;
+    height: 2.9rem;
+    width: 330px;
+    border: 0.5px solid  #b8bbbe;
+    border-radius: 6px;
+    outline: 3px #1877f2;
+    margin: 10px;
+    text-indent: 10px;
+    font-size: 17px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+.btn {
+    height: 2.9rem;
+    width: 330px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:active {
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+a {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 330px;
+}
+
+.btn-2 {
+    font-size: 17px;
+    border-radius: 6px;
+    background-color: #42b72a;
+    border: none;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding: 16px;
+}
+.btn-2:active{
+    scale: 1.1;
+    transition: 0.3s;
+}
+p {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:700px) {
+
+    .flex-container {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .logo h2 {
+        font-weight: 500;
+        font-size: 24px;
+        width: 23rem;
+        margin: 0px 0px 20px 0px;
+    }
+}
